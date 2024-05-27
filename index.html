@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./aos/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="./images/favicon.ico"/>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="./scripts/jquery.iMissYou.min.js" defer></script>
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/data.js" defer></script>
     <script src="./aos/aos.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Clothing Store</title>
 </head>
 <body>
@@ -166,7 +166,8 @@
 <section id="contact" class="contact">
     <div class="container">
         <h2 data-aos="fade-up">Contact Us</h2>
-        <form action="submit_form.php" method="POST" data-aos="fade-up">
+        <form action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up">
+            <input type="hidden" name="access_key" value="8e5c8ea3-2412-45f4-b57c-b880e18ae207">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -179,6 +180,10 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
+            <form action="?" method="POST">
+                <div class="g-recaptcha" data-sitekey="6LfEO-kpAAAAAPDeZ-P43WjateCNHrkCvHOysvC4"></div>
+                <br/>
+
             <button type="submit">Send Message</button>
         </form>
     </div>
@@ -227,5 +232,10 @@
         </div>
         <p>2024 Clothing Store. All Rights Reserved. <span>Created by Edmon Aseyan</span></p>
     </footer>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          alert("grecaptcha is ready!");
+        };
+      </script>
 </body>
 </html>
