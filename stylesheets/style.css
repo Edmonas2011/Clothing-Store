@@ -433,6 +433,8 @@ h2 {
     border-radius: 5px;
     box-sizing: border-box;
     display: flex;
+    overflow: hidden;
+    resize: none;
 }
 
 .form-group input:focus,
@@ -888,3 +890,4 @@ button[type="submit"]:hover {
         padding: 0;
     }
 }
+
