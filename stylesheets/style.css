@@ -427,7 +427,7 @@ h2 {
 
 .form-group input,
 .form-group textarea {
-    width: 60rem;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
