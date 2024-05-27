@@ -751,8 +751,140 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-#my-scrollbar {
-    width: 500px;
-    height: 500px;
-    overflow: auto;
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
     }
+
+    header {
+        padding: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    header nav a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .all h1 {
+        font-size: 28px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .all p {
+        font-size: 16px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .all button {
+        font-size: 18px;
+        width: 160px;
+        padding: 10px;
+    }
+
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-grid>div {
+        padding: 10px;
+    }
+
+    .product-grid>div h3 {
+        font-size: 18px;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .product-grid>div p {
+        font-size: 14px;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .product-grid>div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact {
+        padding: 20px 10px;
+    }
+
+    .contact .form-group input, 
+    .contact .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+
+    .about {
+        padding: 20px 10px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .about p {
+        font-size: 14px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .size-guide {
+        padding: 20px 10px;
+    }
+
+    .size-guide h2 {
+        font-size: 24px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .size-guide p {
+        font-size: 14px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .size-guide button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .social-media {
+        padding: 20px 10px;
+    }
+
+    .social-media h2 {
+        font-size: 24px;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .social-icons {
+        flex-direction: grid;
+        gap: 10px;
+        padding: 0;
+    }
+}
