@@ -14,28 +14,30 @@
     <script src="./aos/aos.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./scripts/dark-mode.js" defer></script>
     <title>Clothing Store</title>
 </head>
 <body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
     <header>
         <a href="#" class="logo"><i class="fa-solid fa-shirt" id="fa-shirt"></i>Clothes</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#product">Product</a>
+            <a href="#about">About</a>
+            <a href="#size-guide">Size Guide</a>
+            <a href="#social-media">Social Media</a>
+            <a href="#contact">Contact</a>
+        </nav>
         <div class="icons">
             <i class="fas fa-search" id="fa-search"></i>
             <a href="#" class="fas fa-heart" id="fa-heart"></a>
             <a href="#" class="fas fa-shopping-cart" id="fa-shopping-cart"></a>
+            <i class="fas fa-moon" id="dark-mode-toggle"></i>
+            <i href="#login" id="login-icon"><i class="fa-solid fa-user"></i></i>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#size-guide">Size Guide</a></li>
-                <li><a href="#social-media">Social Media</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#login" id="login-icon"><i class="fa-solid fa-user"></i></a></li>
-            </ul>
-        </nav>
     </header>
 
     <section id="home" class="all">
@@ -46,7 +48,7 @@
             <button><span>Shop Now</span></button>
         </div>
         <div class="slider">
-            <img class="current_image" src="images/shoe1.png" alt="Slide 1">
+            <img class="current_image" src="images/shoe1.png" alt="Shoe 1">
         </div>
     </section>
 
@@ -80,12 +82,12 @@
     
     <section id="about" class="about">
         <div class="container">
-            <h2 data-aos="fade-up">About Us</h2>
+            <h2 data-aos="fade-up" class="h2">About Us</h2>
             <p data-aos="fade-up">Once upon a time, in the bustling heart of a fashion-forward city, two passionate designers named Edmon and Edo dreamed of creating a clothing brand that would revolutionize the way people dress. With a small workshop and a big vision, they started crafting unique pieces that blended timeless elegance with modern trends.</p>
             <p data-aos="fade-up">Their journey began with a single sewing machine and a handful of fabrics. They spent countless nights sketching, cutting, and sewing, driven by the belief that fashion is more than just clothing; it's a way to express individuality and confidence.</p>
             <p data-aos="fade-up">Word of their innovative designs quickly spread, and soon, what started as a modest endeavor grew into a beloved brand known for its quality, creativity, and commitment to sustainable practices. Today, our store stands as a testament to Alex and Jamie's dedication, offering a diverse collection that caters to every style and occasion.</p>
             <p data-aos="fade-up">Join us in celebrating fashion that tells a story, embraces diversity, and empowers everyone to feel their best. Welcome to our clothing store, where your style journey begins.</p>
-        </div>
+        </div>x
     </section>
 
 <section id="size-guide" class="size-guide">
@@ -149,7 +151,7 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Login</h2>
-        <form action="/submit_login" method="POST">
+        <form action="submit_login" method="POST">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -228,14 +230,18 @@
             </a>
         </div>
         <div class="map-iframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.2443794509218!2d44.50598731209688!3d40.18137457135948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcfdb34ed325%3A0xc2bcf90b1e4b2bb6!2sCiccioli%20shoes!5e0!3m2!1sru!2sam!4v1716626763376!5m2!1sru!2sam" width="300" height="167" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.2443794509218!2d44.50598731209688!3d40.181
+            37457135948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcfdb34ed325%3A0xc2bcf90b1e4b2bb6!2sCiccioli%2
+            0shoes!5e0!3m2!1sru!2sam!4v1716626763376!5m2!1sru!2sam"width="300" height="167" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <p>2024 Clothing Store. All Rights Reserved. <span>Created by Edmon Aseyan</span></p>
     </footer>
     <script type="text/javascript">
         var onloadCallback = function() {
-          alert("grecaptcha is ready!");
+        alert("grecaptcha is ready!");
         };
-      </script>
+    </script>
 </body>
 </html>
+
