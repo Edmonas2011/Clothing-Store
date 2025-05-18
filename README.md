@@ -12,7 +12,7 @@ This lightweight storefront simulates the experience of an online clothing shop.
 
 ## 🌐 Live Demo
 
-Check out the live application here: [https://edmonas2011.github.io/Clothing-Store](https://clothing-store-eta.vercel.app)
+Check out the live application here: [https://clothing-store-eta.vercel.app](https://clothing-store-eta.vercel.app)
 
 ---
 
